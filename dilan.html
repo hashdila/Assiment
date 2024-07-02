@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Dilan Nawarathna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px; /* Added margin top */
+        }
+
+        .cover-photo {
+            width: 100%;
+            height: 300px;
+            background: url('cover-photo.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -75px;
+        }
+
+        .profile-details {
+            margin-left: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .skill-card {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: calc(33.33% - 20px);
+        }
+
+        .awards {
+            margin-top: 10px;
+        }
+
+        .projects ul {
+            padding-left: 20px;
+        }
+
+        .references {
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3498db;
+            color: white;
+            margin-top: 20px; /* Added margin top */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="cover-photo"></div>
+
+        <div class="profile-info">
+            <img src="/images/dilan.jpg" alt="Dilan Nawarathna" class="profile-photo">
+            <div class="profile-details">
+                <h1 style="font-size: 28px; margin: 0;">Dilan Nawarathna</h1>
+                <p style="margin: 5px 0;">Software Engineer</p>
+                <p style="margin: 5px 0;">+94 76-526-5524 | dilannawa@gmail.com | <a href="https://linkedin.com/in/dilan-nawarathna" target="_blank">linkedin.com/in/dilan-nawarathna</a></p>
+                <p style="margin: 5px 0;">I am a dedicated software engineer with strong technical knowledge, proven teamwork skills, and leadership capabilities. I aim to contribute my expertise to innovative, technology-pushing software projects. Whether creating new applications, optimizing systems, or solving complex problems, I am driven to make a meaningful impact. I thrive in collaborative, learning-focused environments and enjoy working in a dynamic, innovation-driven team.</p>
+            </div>
+        </div>
+
+        <div class="content" style="padding: 20px;">
+
+            <div class="section">
+                <h2>Work Experience</h2>
+                <p><strong>Techzap Solutions - Co-Founder / Backend Developer</strong><br>
+                    12/2022 – Present<br>
+                    - Engineered modern applications with Java, ReactJS, JavaScript, SQL Server, and NoSQL.<br>
+                    - Oversaw back-end development using PHP to maintain site integrity, security, and efficiency.<br>
+                    - Designed databases and table structures following architecture methodology for web applications.<br>
+                    <a href="https://techzap.lk" target="_blank">Techzap Solutions</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>BSc in Computing and Software Engineering</strong><br>
+                    Cardiff Metropolitan University, UK<br>
+                    Second Upper | Graduation Year: 2023</p>
+                <p><strong>HD in Computing and Software Engineering</strong><br>
+                    Cardiff Metropolitan University, UK<br>
+                    Merit | Graduation Year: 2021-2022</p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Java">
+                        <p>Java</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP">
+                        <p>PHP</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS">
+                        <p>ReactJS</p>
+                    </div>
+                    <!-- Add more skill cards similarly -->
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Awards</h2>
+                <div class="awards">
+                    <p><strong>Merit Award</strong> - Ride Sharers Mobile Application<br>
+                        07/2023<br>
+                        Exito Exhibition, ICBT Campus</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <ul>
+                        <li><strong>Jobs and Servicers - Web Application</strong><br>
+                            Final project of BSc-2023<br>
+                            Filling the gap between customers and technicians.<br>
+                            Technologies used: PHP, MySQL</li>
+                        <li><strong>Ride Sharers – Mobile Application</strong><br>
+                            Final group project of HD-2022<br>
+                            An Android-based mobile application for carpooling.<br>
+                            Technologies used: Java, Firebase</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>References</h2>
+                <div class="references">
+                    <p><strong>M.G. Asanka Dinesh</strong><br>
+                        Senior Lecturer Grade III<br>
+                        ICBT Campus, Kurunegala<br>
+                        asanka.d@icbtcampus.edu.lk | +94 77 497 9740</p>
+                    <p><strong>W.G.C.W. K Kulathunga</strong><br>
+                        Lecturer<br>
+                        ICBT Campus, Kurunegala<br>
+                        chathurikulathunga4@gmail.com | +94 71 034 8025</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dilan Nawarathna. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

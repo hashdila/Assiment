@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        header, footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            flex-wrap: wrap;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1;
+        }
+        .image-container {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            margin: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s;
+        }
+        .image-container .name {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 90%;
+        }
+        .image-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+        .image-container:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V3-Ex0WOrI8?autoplay=1&mute=1&loop=1&playlist=V3-Ex0WOrI8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <header>
+        <h1>Welcome to the Profile Set</h1>
+    </header>
+    <div class="container">
+        <div class="image-container" onclick="window.location.href='my.html'">
+            <img src="/images/dilan.jpg" alt="Dilan Nawarathna">
+            <div class="name">Dilan Nawarathna</div>
+        </div>
+        <div class="image-container" onclick="window.location.href='nisal.html'">
+            <img src="/images/dilan1.jpeg" alt="Nisal">
+            <div class="name">Nisal</div>
+        </div>
+        <div class="image-container" onclick="window.location.href='page3.html'">
+            <img src="/images/nisal.jpeg" alt="Image 3">
+            <div class="name">Samira</div>
+        </div>
+        <div class="image-container" onclick="window.location.href='page4.html'">
+            <img src="/images/nisal1.jpeg" alt="Image 4">
+            <div class="name">Abdul</div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Image Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
